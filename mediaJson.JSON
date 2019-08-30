@@ -1,0 +1,7 @@
+{
+"songList":[
+  {"song_1":"fun", "src":"bensound-funnysong.mp3", "artist":"artistName", "title":"TitleName", "albumArt":"source for art"}, 
+  {"song_2":"rock", "src":"Smith", "artist":"artistName", "title":"TitleName", "albumArt":"source for art"},
+  {"song_3":"dub", "src":"Jones", "artist":"artistName", "title":"TitleName", "albumArt":"source for art"}
+]
+}

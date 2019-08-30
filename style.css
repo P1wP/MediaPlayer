@@ -1,0 +1,180 @@
+body{
+    background-color: #222D35;
+    font-size: 1.5em;
+    color:#D0CDDF;
+
+
+}
+
+h1, p{
+    text-align: center;
+    color: #D0CDDF;
+}
+
+h2{
+    color: #D0CDDF;
+}
+
+
+#container{
+    width: 40%;
+    max-width:  450px;
+    min-height: 150px;
+    background-color: #2F3D52;
+    margin: 0 auto;
+    display: none;
+    border-radius: 10px;
+}
+#videoContainer{
+    width: 60%;
+    min-height: 150px;
+    background-color: #2F3D52;
+    margin: 0 auto;
+    display: none;
+    border-radius: 10px;
+}
+
+
+
+#info{
+    text-align: center;
+    color: #D0CDDF;
+
+}
+#imgContainer{
+    max-height: 450px;
+    max-width:  450px;
+    margin: 0 auto;
+}
+#albumArt{
+    width: 100%;
+    height: 100%;
+}
+#songName, #artistName{
+    display:inline-block;
+    color: #D0CDDF;
+}
+        
+#progressBar, #vidBar{
+    background-color: #171717;
+    width: 0px;
+    height: 5px;
+    margin-bottom: 10px;
+    
+}
+
+#realtimeProgress, #vidProg{
+    background-color:#D0CDDF;
+    height: 5px;
+    width: 0px;
+    margin-bottom: 10px;
+}
+#btns, #vidBtns{
+    text-align: center;
+}
+#backbtn, #playbtn, #nextbtn, #vidBack, #vidPlayPause, #vidNext{
+    background-color: #2F3D52;
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: none;
+}
+#backbtn, #vidBack{
+    background-image: url(img/Back.svg);
+   
+}
+#playbtn, #vidPlayPause{
+    background-image: url(img/Play.svg);
+  
+}
+#nextbtn, #vidNext{
+    background-image: url(img/Next.svg);
+ 
+}
+#playlists{
+    width: 100%;
+    min-height: 150px;
+    
+
+}
+
+#lists{
+    float: left;
+    margin:0;
+    width: 150px;
+    
+
+}
+ 
+
+
+
+#videoSet ul li, #audioSet ul li{
+    list-style:none;
+    text-align: left;
+    padding-left:40px;
+    background-color: #445A6D;
+    color: #D0CDDF;
+    width: 90%;
+    background-repeat: no-repeat;
+    background-position: left, center; 
+    background-size: auto;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+li:hover{
+    cursor: pointer;
+}
+
+#videoSet ul li{
+    background-image: url(img/film-solid.svg);
+}
+#audioSet ul li{
+    background-image: url(img/music-solid.svg);
+    
+}
+
+#videoSet ul, #audioSet ul{
+    padding: 0; 
+}
+
+
+#videoContainer video{
+    width: 100%;
+    
+}
+
+#btns, #vidBtns{
+    margin: 10px;
+}
+#videoControlls, #indicatorTime{
+    text-align: center;
+}
+
+#video{
+    margin:0;
+    padding: 0;
+}
+
+
+#videoTimePlayed, #videoLength, #currentTime, #time{
+    color: #D0CDDF;
+}
+/* hide controlls */
+
+.hideControlls{
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    transition-duration: 1s;
+}
+
+#container:hover .hideControlls, #videoContainer:hover .hideControlls{
+    transition-duration: 1s;
+    visibility: visible;
+    max-height: 200px;
+    height: 100px;
+    
+}
