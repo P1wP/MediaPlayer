@@ -178,3 +178,18 @@ li:hover{
     height: 100px;
     
 }
+
+@media only screen and (max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #container, #videoContainer, #video{
+        width: 100%; 
+    }
+    .hideControlls{
+        height: 100px;
+        overflow: auto;
+    }
+    
+}
