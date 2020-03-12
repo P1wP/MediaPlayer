@@ -199,15 +199,14 @@ var videoContainer = document.getElementById("videoContainer");    // used later
                 timePlayed.innerHTML = currentMinutes + ":" + currentSeconds;
             }
             // SHOW PROGRESS
-            var progressCalc = parseInt(soundT.currentTime*widthClean/soundT.duration);  
-            /* playd = 120
-            width = 640
-            fulltime = 500
+            var progressCalc = parseInt(soundT.currentTime*widthClean/soundT.duration);  /* playd = 120
+                                                                                            width = 640
+                                                                                            fulltime = 500
                                                                                             
-            playd*width/fulltime = 153
+                                                                                            playd*width/fulltime = 153
 
-            153 of 640 px should be filled
-            */
+                                                                                            153 of 640 px should be filled
+                                                                                            */
             realtimeProgress.style.width = progressCalc + "px";
         
         }
